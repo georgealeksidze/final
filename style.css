@@ -20,3 +20,100 @@ body {
   flex-direction: column;
   overflow-x: hidden;
 }
+
+/*  LEFTSIDEBAR  */
+
+.grayBox {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 70px;
+  max-width: 70px;
+  min-height: 100vh;
+  background: #5c5c5c;
+  padding: 20px 0;
+}
+
+.logoCircle {
+  width: 38px;
+  height: 38px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.pause {
+  font-size: 20px;
+}
+
+.slideIndex {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* GRAY BOX CONTENT */
+.hero {
+  margin-left: 70px;
+  max-width: calc(100% - 70px);
+  min-height: 100vh;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.line1,
+.line3 {
+  font-size: clamp(48px, 8vw, 120px);
+}
+
+.line2 {
+  position: relative;
+  color: var(--accent);
+  font-size: clamp(48px, 8vw, 120px);
+  padding-left: 250px;
+  width: fit-content;
+}
+.strikethrough {
+  text-decoration: none;
+  position: relative;
+}
+
+.line3 {
+  padding-left: 250px;
+}
+
+.strikethrough {
+  position: relative;
+}
+
+.strikethrough::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 -20px;
+}
