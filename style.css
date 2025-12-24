@@ -788,3 +788,144 @@ h1 .line8::after {
   margin-left: 200px;
 }
 
+
+
+
+@media (max-width: 480px) {
+
+  /* REMOVE FIXED SIDEBAR */
+  .grayBox {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 20px;
+  }
+
+  .hero,
+  .projects1 {
+    margin-left: 0;
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  /* HERO */
+  .line1,
+  .line2,
+  .line3 {
+    font-size: clamp(32px, 10vw, 56px);
+    padding-left: 0;
+  }
+
+  .letsWork {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .scroll-down {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .videoCard {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  /* SOLUTIONS */
+  .solutions {
+    padding: 60px 20px;
+  }
+
+  .solutions-title {
+    font-size: 42px;
+  }
+
+  .readMore {
+    margin-left: 0;
+  }
+
+  /* PROJECTS */
+  .projectsHeader,
+  .projectsTitle {
+    margin-left: 0;
+  }
+
+  .projectsTitle {
+    font-size: 42px;
+  }
+
+  .projectsGrid {
+    margin-top: 60px;
+  }
+
+  .cardTop {
+    height: 320px;
+  }
+
+  .number {
+    font-size: 96px;
+  }
+
+  /* SERVICES */
+  .studioServices {
+    margin-left: 0;
+  }
+
+  .services1 {
+    margin-left: 0;
+    padding: 40px 20px;
+  }
+
+  .serviceList li {
+    font-size: 22px;
+  }
+
+  .ctaBlock {
+    width: 100%;
+    height: 260px;
+  }
+
+  /* LATEST THOUGHTS */
+  .latestthoughts {
+    padding: 60px 20px;
+  }
+
+  .featuredBlock {
+    width: 100%;
+    height: 320px;
+  }
+
+  .articleDetails h2 {
+    font-size: 24px;
+  }
+
+  .articleDetails .subtitle {
+    white-space: normal;
+  }
+
+  /* FOOTER */
+  .yellowContainer {
+    padding: 60px 20px;
+  }
+
+  .headerAndCircle,
+  .headerLatest1,
+  .neuroinfo,
+  .headerbottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  h1 .line5,
+  h1 .line6,
+  h1 .line7,
+  h1 .line8 {
+    font-size: 48px;
+  }
+
+}
