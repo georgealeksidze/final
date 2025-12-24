@@ -476,3 +476,96 @@ input:checked + .slider::before {
   border-color: var(--accent);
 }
 
+
+
+
+/*  STUDIO SERVICES  */
+.servicesContainerMain {
+  width: 100%;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+}
+
+.studioServices .outline {
+  font-size: 64px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+.studioServices {
+  position: relative;
+  margin-left: 100px;
+  margin-bottom: 64px;
+}
+
+.services1 {
+  display: flex;
+  gap: 100px;
+
+  margin-left: 100px;
+  padding-top: 100px;
+  
+}
+.studioText {
+  font-size: 48px;
+  color: transparent;
+  -webkit-text-stroke: 1px #444;
+}
+
+.serviceList {
+  width: 770px;
+  height: 520px;
+  padding-top: 50px;
+}
+
+.serviceList li {
+  padding: 15px 0;
+  border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+.serviceList li:nth-child(4) {
+  color: yellow; 
+  border-bottom: 1px solid #e5ef4a; 
+}
+
+.serviceNumber {
+  color: rgba(128, 128, 128, 0.5);
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}
+h1 {
+  font-size: 48px;
+  color: var(--accent);
+  margin-left: 140px;
+  gap: 30px;
+}
+
+.ctaBlock {
+  width: 290px;
+  height: 392px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+}
+
+.ctaCircle {
+  width: 108px;
+  height: 108px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+
