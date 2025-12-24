@@ -324,3 +324,155 @@ input:checked + .slider::before {
   color: #000;
   border-color: var(--accent);
 }
+
+
+
+/* PROJECTS SECTION */
+.projects1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  width: 100%;
+  background: var(--dark);
+  padding: 80px;
+}
+
+
+.projectsHeader {
+  position: relative;
+  margin-bottom: 64px;
+  margin-left: 100px;
+}
+
+
+.projectsHeader .outline {
+  font-size: 64px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+
+.projectsTitle {
+  position: relative;
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--accent);
+  display: inline-block;
+  z-index: 1;
+  margin-left: 175px;
+}
+
+
+.projectsTitle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -6.5vw;
+  right: -1vw;
+  height: 1px;            
+  background: var(--accent);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 16px;  
+  margin-top: 200px;
+}
+
+.cardTop {
+  width: 550px;
+  height: 408px;
+  background: gray;
+  position: relative;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+}
+
+.number {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 168px;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white);
+  transform: rotate(270deg);
+}
+
+.arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 108px;
+  height: 108px;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--white);
+  font-size: 24px;
+  cursor: pointer;
+}
+.blackCircle {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 64px;
+  height: 64px;
+  background: var(--dark);
+  border-radius: 50%;
+}
+.yellowBox {
+  position: absolute;
+  margin-top: 300px;
+  width: 100%;
+  height: 128px;
+  background: var(--accent);
+}
+
+/* INFO */
+.cardInfo {
+  margin-top: 30px;
+}
+
+.cardInfo h3 {
+  color: var(--accent);
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.cardInfo p {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+.cardInfo small {
+  display: block;
+  margin-top: 14px;
+  color: #777;
+}
+
+.cardInfo li {
+  font-size: 14px;
+  color: white;
+  margin-top: 20px;
+}
+.moreWorks {
+  margin-top: 60px;
+  width: 130px;
+  padding: 12px 0;
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.moreWorks:hover {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+}
+
